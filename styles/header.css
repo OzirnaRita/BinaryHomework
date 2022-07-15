@@ -1,0 +1,148 @@
+.headerLine {
+  width: 100%;
+  background-color: rgb(248, 249, 252);
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  transform: translateX(-150%);
+  padding: 0px 10%;
+  animation: 1s ease 0s 1 normal forwards running ani;
+}
+
+.logoLink {
+  display: inline-block;
+  width: 115px;
+  cursor: pointer;
+}
+
+.headerLine {
+  width: 100%;
+  background-color: #F8F9Fc;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 10%;
+  align-items: center;
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+
+.logoLink {
+  display: inline-block;
+  width: 115px;
+  cursor: pointer;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.menuBlock {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  background-color: #ff9a00;
+  color: #FFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.menuButton:hover {
+  background-color: #e68d08;
+  transition: 0.5s;
+}
+
+.menuButtonLetter {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.menuToggle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 8;
+}
+
+.menuItemsList {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  flex-direction: column;
+  min-width: 200px;
+  color: black;
+  background-color: #fff;
+  padding: 10px 25px;
+  box-shadow: 0px 0px 50px 10px rgb(106 106 106 / 12%);
+}
+
+.menuItemsList li {
+  display: flex;
+  height: 40px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.menuItemsList li:first-child {
+  color: #8a8998;
+  justify-content: space-around;
+  border-bottom: 1px solid #8a8998;
+  margin-bottom: 5px;
+}
+
+.menuItemsList li:not(:first-child) {
+  color: #000;
+  cursor: pointer;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+
+.menuItemsList li:not(:first-child):hover {
+  background-color: #c9c7db;
+}
+
+.menuItemsList li i {
+  width: 16px;
+  color: #8a8998;
+  ;
+}
+
+.menuToggle:checked~.menuItemsList {
+  display: flex;
+}
+
+.fa-bell {
+  font-size: 20px;
+  color: #c9c7db;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-bell:hover {
+  color: #8a8998;
+  transition: 0.5s;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

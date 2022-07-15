@@ -1,0 +1,36 @@
+.messageField .card:not(:last-child) {
+  margin-bottom: 15px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  width: 250px;
+  background-color: var(--main-bg-color);
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 5px 10px 0px;
+}
+.card .icon {
+  font-size: 30px;
+  padding: 0px 20px;
+}
+.card h3 {
+  font-weight: bold;
+}
+.messageField {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.error {
+  --main-bg-color: #c43027;
+}
+.success {
+  --main-bg-color: #1b8411;
+}
+.warning {
+  --main-bg-color: #c98313;
+}
